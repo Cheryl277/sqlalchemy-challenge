@@ -16,7 +16,7 @@ Use the SQLAlchemy automap_base() function to reflect your tables into classes, 
 
 Link Python to the database by creating a SQLAlchemy session.
 
-IMPORTANT
+### IMPORTANT
 Remember to close your session at the end of your notebook.
 
 Perform a precipitation analysis and then a station analysis by completing the steps in the following two subsections.
@@ -25,9 +25,6 @@ Precipitation Analysis
 Find the most recent date in the dataset.
 
 Using that date, get the previous 12 months of precipitation data by querying the previous 12 months of data.
-
-HINT
-Select only the "date" and "prcp" values.
 
 Load the query results into a Pandas DataFrame, and set the index to the "date" column.
 
@@ -98,7 +95,7 @@ Join the station and measurement tables for some of the queries.
 
 Use the Flask jsonify function to convert your API data to a valid JSON response object.
 
-Requirements
+### Requirements
 Jupyter Notebook Database Connection (10 points)
 To receive all points, you must
 Use the SQLAlchemy create_engine() function to connect to your SQLite database (1 point)
